@@ -1,6 +1,6 @@
 # Algorithms for searching the state space (BI-ZUM)
 
-This repository was created as a part of my 'The basics of artificial intelligence'. The repository contains C++ code with implementation of algorithms for both systematic and non-systemating search of the state space.
+This repository was created as a part of my 'The basics of artificial intelligence' course at FIT CTU. The repository contains C++ code with implementation of algorithms for both systematic and non-systemating search of the state space.
 
 ## Prerequisites 
 - C++ compiler (g++)
@@ -15,10 +15,12 @@ Compile by running `make` in the subproject folder. A binary will be created in 
 
 ### hw01 - Systematic state space search
 
-Maze solver, allows the selection of a algorithm used to find the solution and displays an animation of its progress in the terminal.
+Maze solver, loads a specified maze from a text file, allows the selection of a algorithm used to find the solution and displays an animation of its progress in the terminal.
+
+![](media/hw01.gif)
 
 #### Maze loading
-The solver can load a specified maze from a text file. After running the binary, it will prompt for a path to this maze file. The format of a maze is as follows:
+The binary takes a path to this maze file as an argument. The format of a maze is as follows:
 - ` ` (space) - empty tile
 - `X` - wall
   
@@ -44,8 +46,10 @@ The solver displays an animation of the algorithm's progress in terminal, with h
 
 The solver loads specified TSP problem from a CSV file and approximates a solution while displaying its progress.
 
+![](media/hw02.gif)
+
 #### Problem loading
-After running the binary, it will prompt for a path to the problem CSV file. The format of the problem is CSV, structured as follows:
+The binary takes a path to the problem CSV file as an argument. The format of the problem is CSV, structured as follows:
 
 `city,distances` for each row
 
